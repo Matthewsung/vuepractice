@@ -2,7 +2,10 @@ import {createStore} from 'vuex'
 
 export default createStore({
   state:{
-    count:0,
+    count:{
+      default: 0,
+      gap:0
+    },
     add:{
       name:'',
       age:null
@@ -18,12 +21,15 @@ export default createStore({
       },
     ]
   },
+  getters:{
+    
+  },
   mutations:{
     increaseCount: function (state){
-      return state.count += 2
+      return state.count.default += state.count.gap
     },
     resetCount:function(state){
-      return state.count = 0
+      return state.count.default = 0
     },
     addList : (state) => {
       event.preventDefault();

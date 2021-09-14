@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>HOME 입니다</h1>
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     

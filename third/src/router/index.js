@@ -10,6 +10,11 @@ const routes = [
     path:'/about',
     name:'About',
     component: () => import('../views/About.vue')
+  },
+  {
+    path:'/list',
+    name:'Name',
+    component: () => import('../views/List.vue')
   }
 ]
 const router = createRouter({
